@@ -1,0 +1,124 @@
+
+
+/* Material Input */
+.materialInput{
+  height: 4.8rem;
+  position: relative;
+  }
+  .materialInput input{
+    width: 29rem;
+    flex: 1 1;
+    z-index: 1;
+    color: whitesmoke;
+    background-color: transparent;
+    line-height: 3.2rem;
+    border: .2rem solid #999;
+    padding: .16rem;
+  }
+  .materialInput .label{
+    position: absolute;
+    line-height: 3.2rem;
+    color: #e8e1e1;
+    margin-left: .64rem;
+    z-index: 0;
+    font-size: 1.6rem;
+    letter-spacing: .016rem;
+    transition: all 0.1s ease-in-out;
+  }
+  .materialInput .label.focus{
+    top: -3.2rem !important;
+  }
+
+  .materialTextArea{
+    position: relative;
+    height: 14rem;
+  }
+  .materialTextArea textarea{
+    width: 80rem;
+    flex: 1 1;
+    z-index: 1;
+    color: whitesmoke;
+    background-color: transparent;
+    border: .2rem solid #999;
+    top: -3.2rem;
+    padding: 1.6rem;
+    height: 14rem;
+    resize: none;
+  }
+  .materialTextArea .label{
+    position: absolute;
+    line-height: 3.2rem;
+    color: #e8e1e1;
+    margin-left: .64rem;
+    z-index: 0;
+    font-size: 1.6rem;
+    letter-spacing: .016rem;
+    transition: all 0.1s ease-in-out;
+}
+  
+ .materialTextArea .label.focus{
+    top: -3.2rem !important;
+  }
+
+/* Material Button */
+
+
+  .materialButton{
+    display: inline-block;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    outline: none;
+    /* background-color: #fb641b;
+    color: #ffffff; */
+    box-shadow: 0 .096rem .192rem 0 rgba(0,0,0,.2);
+    border: none;
+    /* cursor: pointer; */
+    border-radius: .192rem;
+  }
+  .materialButton:hover{
+    box-shadow: 0 .384rem .576rem 0 rgba(0,0,0,.12);
+  }
+
+
+
+@media screen and (max-width:770px){
+  .materialInput .label {
+    font-size: 1.3rem;
+  }
+  .materialInput input {
+    width: 21rem;
+    font-size: 1.2rem;
+}
+.materialTextArea .label {
+  font-size: 1.3rem;
+}
+.materialTextArea textarea {
+  width: 62rem;
+  font-size: 1.2rem;
+}
+.materialButton {
+  font-size: 1.3rem;
+ }
+}
+
+  @media screen and (max-width:360px){
+    .materialInput .label {
+      font-size: 1.2rem;
+    }
+   .materialInput input {
+     width: auto;
+    font-size: 1.1rem;
+   }
+   .materialTextArea .label {
+    font-size: 1.2rem;
+  }
+ .materialTextArea textarea {
+   width: 53rem;
+  font-size: 1.1rem;
+ }
+ .materialButton {
+  font-size: 1.2rem;
+ }
+
+}

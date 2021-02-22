@@ -1,0 +1,672 @@
+html{
+    font-size: 62.5%;
+    
+ }
+ 
+ #resume{
+     background-color: black;
+     width: calc(100vw-19.2rem);
+     height: 100vh;
+     overflow-x: hidden;
+ }
+ 
+ 
+ #resume .container{
+     width: 100%;
+     padding: 5rem;
+ }
+ 
+ #resume .container .resumeHeading{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ #resume .container .resumeHeading .header{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: baseline;
+ }
+ 
+ #resume .container .resumeHeading .header h1{
+     color: white;
+     font-size: 3.2rem;
+     font-weight: bold;
+     text-decoration:.2rem .2rem .2rem black;
+ }
+ 
+ #resume .container .resumeHeading .header span{
+     color: white;
+     font-size: 3.84rem;
+     font-weight: bold;
+     text-decoration:.2rem .2rem .2rem black;
+ }
+ 
+ 
+ #resume .container .resumeHeading .line{
+     border-top-style: dashed;
+     border-color: #dad5d1;
+     width: 100%;
+     margin-top: .2rem;
+ 
+ }
+ 
+ /* ************* */
+ 
+
+#resume .container .resumeContent .resumeContainer{
+    border: .2rem solid #504b4b;
+    margin: 3.5rem 0;
+    padding: .7rem;
+    background-color: #525050;
+}
+/* ****** */
+#resume .container .resumeContent .resumeContainer .resumeform{
+    display: flex;
+    background-color: white;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left{
+    background-color: #3c80e5;
+    width: 74rem;
+} 
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .profileimage{
+    width: 100%;
+    height: 30.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .profileimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .2rem solid black;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content{
+    padding: 1.2rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne p{
+    font-size: 1.44rem;
+    color: #1d1c1a;
+    margin-top: -.4rem;
+    margin-left: 1.2rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons{
+    margin: 3.2rem 1.6rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons .profileicon{
+    display: flex;
+    align-items: baseline;
+    margin: 1.6rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons .profileicon span{
+    font-size: 1.5rem;
+    padding-right: .8rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo{
+    margin: 3.2rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent{
+    padding: 1rem 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent p{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: baseline;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent p span{
+    font-weight: bold;
+    border: .2rem solid black;
+    border-radius: 5.7rem;
+    /* font-size: 0px */
+    padding: .1rem;
+    margin-top: .9rem;
+    height: .2rem;
+    margin-right: .6rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree{
+    margin: 4.8rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent{
+    padding: 0 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent p{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: baseline;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent p span{
+    font-weight: bold;
+    border: .2rem solid black;
+    border-radius: 5.7rem;
+    /* font-size: 0px; */
+    padding: .1rem;
+    margin-top: .9rem;
+    height: .2rem;
+    margin-right: .6rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour{
+    margin: 5.4rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent{
+    padding: 0 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent p{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: baseline;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent p span{
+    font-weight: bold;
+    border: .2rem solid black;
+    border-radius: 5.7rem;
+    /* font-size: 0px; */
+    padding: .1rem;
+    margin-top: .9rem;
+    height: .2rem;
+    margin-right: .6rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive{
+    margin: 3.2rem 0 1.6rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons{
+    padding: 0 1.4rem;
+    margin: 1.6rem 0 0 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons .social{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.3rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons .social span{
+    font-size: 2.6rem;
+    padding-right: 1.6rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons .social .righticondesc{
+    padding: .2rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons .social .righticondesc .nameicon{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons .social .righticondesc p{
+    font-size: 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .left .leftLine{
+    margin-bottom: 2.3rem;
+    border-bottom: .3rem solid black;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right{
+    padding: 1.2rem;
+    padding-top: 3.4rem;
+    background-color: #d0c5b7;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .aboutme h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .aboutme p{
+    margin: 1.9rem 2.5rem 2.5rem 2.5rem;
+    text-align: justify;
+    font-size: 1.4rem;
+   
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .internship h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent{
+    display: flex;
+    margin: 2.5rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internLeft{
+    border: .2rem solid black;
+    border-right: none;
+    padding-right: .5rem;
+    margin-right: 1.2rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern h2{
+    font-size: 2.24rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern p{
+   text-align: justify;
+   font-size: 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern h3{
+    font-size: 1.44rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .education h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate{
+    display: flex;
+    margin: 2.5rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateLeft{
+    font-weight: bold;
+    border: .2rem solid black;
+    border-radius: 5.7rem;
+    font-size: .1rem;
+    padding: .1rem;
+    margin-top: 1rem;
+    margin-right: .6rem;
+    height: .2rem;
+}
+
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight h3{
+    font-size: 2.24rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight p{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .projects h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project{
+    display: flex;
+    margin: 2.5rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectLeft{
+    font-weight: bold;
+    border: .2rem solid black;
+    border-radius: 5.7rem;
+    font-size: .1rem;
+    padding: .1rem;
+    margin-top: 1rem;
+    height: .2rem;
+    margin-right: .6rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight h3{
+    font-size: 2.24rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight p{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .achievements{
+    margin: 3.2rem 0;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .achievements h1{
+    font-size: 2.72rem;
+    font-weight: bold;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement{
+    display: flex;
+    align-items: center;
+    padding: .2rem 2.5rem;
+} 
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement .achieveLeft{
+    height: .2rem;
+    font-weight: bold;
+    border: .2rem solid black;
+    border-radius: 5.7rem;
+    font-size: .1rem;
+    padding: .1rem;
+    margin-right: .4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement p{
+    font-size: 1.4rem;
+}
+
+#resume .container .resumeContent .resumeContainer .resumeform .right .rightLine{
+    margin-bottom: 2.3rem;
+    border-bottom: .3rem solid black;
+}
+
+p{
+    margin-bottom: unset;
+}
+
+@media screen and (max-width:1200px ){
+    #resume .container {
+        padding: 10rem 6rem;
+    }
+    #resume{
+        width:calc(100vw - 20.6rem) !important;
+        margin-left: 19.1rem !important;
+    }
+   
+}
+
+@media screen and (max-width:1074px){
+    #resume{
+        width:calc(100vw - 20.9rem) !important;
+        margin-left: 25.9rem !important;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left{
+        width: 60rem;
+    } 
+}
+
+
+@media screen and (max-width:991px ){
+    #resume{
+        width:calc(100vw - 26rem) !important;
+        margin-left: 26rem !important;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left {
+        width: 39rem !important;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:770px){
+    #resume{
+        margin-left: unset !important;
+        width: 100% !important;
+        height: calc(100vh - 10rem) !important;
+    }
+    #resume .container {
+        padding: 20rem 6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left {
+        width: 32rem !important;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent {
+        grid-template-columns: 1fr 1fr;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive .social-icons .social span {
+        font-size: 0.9rem;
+        padding-right: 1.6rem;
+    }
+}
+
+@media screen and (max-width:550px) and (min-width:361px){
+    #resume .container .resumeContent .resumeContainer .resumeform .left {
+        width: 18rem !important;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .profileimage {
+        height: 22.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons {
+        margin: 1.2rem 0rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons .profileicon span {
+        font-size: 1rem;
+        padding-right: 0.1rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne p {
+        margin-left: 0.2rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent {
+        padding: 1rem 1.4rem;
+        display: unset;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent p{
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree {
+        margin: 3.8rem 0;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent p {
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour {
+        margin: 4.4rem 0;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent p {
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive {
+       display: none;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme p {
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent {
+        margin: 1.5rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern h2 {
+        font-size: 1.24rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern p {
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate {
+        margin: 1.5rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight h3 {
+        font-size: 1.24rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight p {
+        text-align: justify;
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project {
+        margin: 1.5rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight h3 {
+        font-size: 1.24rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight p {
+        font-size: 0.6rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements {
+        margin: 2.2rem 0;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:360px){
+    #resume .container .resumeContent .resumeContainer .resumeform .left {
+        width: 18rem !important;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .profileimage {
+        height: 22.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons {
+        margin: 1.2rem 0rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne .personalprofileicons .profileicon span {
+        font-size: 1rem;
+        padding-right: 0.1rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne p {
+        margin-left: 0.2rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent {
+        padding: 1rem 1.4rem;
+        display: unset;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent p{
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree {
+        margin: 3.8rem 0;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent p {
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour {
+        margin: 4.4rem 0;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent p {
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive {
+       display: none;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme p {
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent {
+        margin: 1.5rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern h2 {
+        font-size: 1.24rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern p {
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate {
+        margin: 1.5rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight h3 {
+        font-size: 1.24rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight p {
+        text-align: justify;
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project {
+        margin: 1.5rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight h3 {
+        font-size: 1.24rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight p {
+        font-size: 0.4rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements {
+        margin: 2.2rem 0;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements h1 {
+        font-size: 1.72rem;
+    }
+    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement p {
+        font-size: 0.4rem;
+    }
+}

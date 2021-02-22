@@ -1,0 +1,53 @@
+.skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skill .CircularProgressbar {
+    width: 26%;
+}
+
+.skill .skill-text{
+    display: flex;
+    padding-left: 2rem;
+    width: 30rem;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.skill .skill-text h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.skill .skill-text p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+ }
+
+ @media screen and (max-width:770px){
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill .skill-text {
+        display: flex;
+        padding-top: 3rem;
+        width:auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill .CircularProgressbar {
+        width: 17%;
+    }
+    .skill .skill-text h1 {
+        font-size: 1.4rem;
+    }
+    .skill .skill-text p {
+        font-size: 0.9rem;
+    }
+ }

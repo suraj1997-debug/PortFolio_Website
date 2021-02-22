@@ -1,0 +1,140 @@
+#portfolio{
+    background-color: black;
+    width: calc(100vw-19.2rem);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#portfolio .container{
+    width: 100%;
+    padding: 5rem;
+}
+
+#portfolio .container .portfolioHeading{
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .container .portfolioHeading .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#portfolio .container .portfolioHeading .header h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+#portfolio .container .portfolioHeading .header span{
+    color: white;
+    font-size: 3.84rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+
+#portfolio .container .portfolioHeading .line{
+    border-top-style: dashed;
+    border-color: #dad5d1;
+    width: 100%;
+    margin-top: .2rem;
+
+}
+
+/* ********** */
+
+#portfolio .container .portfolioContent{
+    padding: 2rem;
+}
+
+#portfolio .container .portfolioContent .skillContainer{
+    padding: 5rem;
+}
+
+#portfolio .container .portfolioContent .skillContainer .skillsetHeading{
+    display: grid;
+    place-items: center;
+}
+
+#portfolio .container .portfolioContent .skillContainer .skillsetHeading h3{
+    font-weight: bold;
+    color: #a4fb08;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+#portfolio .container .portfolioContent .skillContainer .skillsetHeading h2{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}
+
+#portfolio .container .portfolioContent .skillContainer .skillContentContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem 20rem;
+    padding: 2rem 3rem;
+}
+
+@media screen and (max-width:1200px ){
+    #portfolio .container {
+        padding: 10rem 6rem;
+    }
+    #portfolio{
+        width:calc(100vw - 20.6rem) !important;
+        margin-left: 19.1rem !important;
+    }
+   
+}
+
+@media screen and (max-width:1074px){
+    #portfolio{
+        width:calc(100vw - 20.9rem) !important;
+        margin-left: 18.8rem !important;
+    }
+}
+
+@media screen and (max-width:991px ){
+    #portfolio{
+        width:calc(100vw - 26rem) !important;
+        margin-left: 26rem !important;
+    }
+}
+
+@media screen and (max-width:770px){
+    #portfolio{
+        margin-left: unset !important;
+        width: 100% !important;
+        height: calc(100vh - 10rem) !important;
+    }
+    #portfolio .container {
+        padding: 20rem 6rem;
+    }
+    #portfolio .container .portfolioContent .skillContainer {
+        padding: 4rem 0rem;
+        display: grid;
+        place-items: center;
+    }
+    #portfolio .container .portfolioContent .skillContainer .skillContentContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem 0rem;
+        padding: 8rem 0rem;
+    }
+    #portfolio .container .portfolioContent {
+        padding: 2rem 0rem;
+    }
+  
+}
+
+@media screen and (max-width:360px){
+    #portfolio .container .portfolioContent .skillContainer .skillContentContainer {
+        padding: 3rem 0rem;
+    }
+}

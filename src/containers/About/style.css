@@ -1,0 +1,196 @@
+#about{
+    background-color: black;
+    width: calc(100vw-19.2rem);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#about .container{
+    width: 100%;
+    padding: 5rem;
+}
+
+#about .container .aboutHeading{
+    display: flex;
+    flex-direction: column;
+}
+
+#about .container .aboutHeading .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#about .container .aboutHeading .header h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+#about .container .aboutHeading .header span{
+    color: white;
+    font-size: 3.84rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+
+#about .container .aboutHeading .line{
+    border-top-style: dashed;
+    border-color: #dad5d1;
+    width: 100%;
+    margin-top: .2rem;
+
+}
+
+/* ******** */
+
+#about .container .aboutContent{
+    display: flex;
+    padding: 0 1rem;
+    padding-top: 4.8rem;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#about .container .aboutContent .left{
+    display: inline-block;
+    padding: 0 2rem;
+    width: 94rem;
+}
+
+#about .container .aboutContent .left h1{
+    color: #a29393;
+    font-size: 3.3rem;
+}
+
+#about .container .aboutContent .left p{
+    color: whitesmoke;
+    text-align: justify;
+    margin-left: 1.1rem;
+    margin-top: 2.6rem;
+    /* width: 59rem; */
+    font-size: 1.8rem;
+    margin-right: 5rem;
+    padding-right: 4rem;
+}
+
+#about .container .aboutContent .right{
+    padding: 0 2rem;
+}
+
+#about .container .aboutContent .right h1{
+    color: #a29393;
+    font-size: 3.3rem;
+    margin-bottom: 2.6rem;
+}
+
+#about .container .aboutContent .right p{
+    color: whitesmoke;
+    margin-left: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+
+/* @media(max-width:1594px){
+    html{
+        font-size:55%;
+    }
+    } */
+
+@media screen and (max-width:1200px ){
+    #about .container {
+        padding: 10rem 6rem;
+    }
+    #about{
+        width:calc(100vw - 20.6rem) !important;
+        margin-left: 19.1rem !important;
+    }
+   
+}
+
+@media screen and (max-width:1074px){
+    #about{
+        width:calc(100vw - 20.9rem) !important;
+        margin-left: 18.8rem !important;
+    }
+    #about .container .aboutContent{
+        padding:0 4rem;
+        padding-top: 8.8rem;
+    }
+    #about .container .aboutContent .right{
+        padding-left: 9rem;
+    }
+}
+
+@media screen and (max-width:991px){
+    #about{
+        width:calc(100vw - 26rem) !important;
+        margin-left: 26rem !important;
+    }
+    #about .container .aboutContent{
+        flex-direction: column;
+        padding: 7rem 6rem;
+        padding-top: 4.8rem;
+        margin-top: 8rem;
+    }
+    #about .container .aboutContent .left{
+        margin-bottom: 10rem;
+        width: unset;
+    }
+    #about .container .aboutContent .left h1{
+        font-size: 3rem;
+    }
+    #about .container .aboutContent .left p{
+        font-size: 2rem;
+        width: unset;
+    }
+    #about .container .aboutContent .right{
+        width: 44rem;
+        padding-left: 2rem;
+
+    }
+    #about .container .aboutContent .right h1{
+        font-size: 3rem;
+    }
+    #about .container .aboutContent .right p{
+       
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:770px){
+    #about{
+        margin-left: unset !important;
+        width: 100% !important;
+        height: calc(100vh - 10rem) !important;
+    }
+    #about .container {
+        padding: 20rem 6rem;
+    }
+    #about .container .aboutContent{
+        padding: 3rem 0rem;
+       
+    }
+}
+
+@media screen and (max-width:360px){
+    #about .container {
+        padding: 14rem 0rem;
+    }
+    #about .container .aboutHeading {
+        padding: 0 3rem;
+    }
+    #about .container .aboutContent {
+        padding: unset;
+    }
+    #about .container .aboutContent .left {
+        margin-left: 2rem;
+    }
+    #about .container .aboutContent .right {
+        margin-left: 2rem;
+    }
+}

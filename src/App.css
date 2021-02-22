@@ -1,0 +1,32 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html{
+  font-size:62.5%;
+}
+
+.Flex-Row{
+  display:flex;
+  overflow-x: hidden;
+}
+
+.loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient( 45deg,#fdfdfd, transparent);
+}
+
+
+
+@media(max-width:770px){
+  .Flex-Row{
+    flex-direction: column !important;
+}
+}

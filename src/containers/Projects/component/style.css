@@ -1,0 +1,276 @@
+
+ 
+ #project{
+    background-color: black;
+    width: calc(100vw-19.2rem);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+#project .container{
+    width: 100%;
+    padding: 5rem;
+}
+
+#project .container .projectHeading{
+    display: flex;
+    flex-direction: column;
+}
+
+#project .container .projectHeading .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#project .container .projectHeading .header h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+#project .container .projectHeading .header span{
+    color: white;
+    font-size: 3.84rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+
+#project .container .projectHeading .line{
+    border-top-style: dashed;
+    border-color: #dad5d1;
+    width: 100%;
+    margin-top: .2rem;
+
+}
+
+/* ************* */
+
+#project .container .projectContent{
+    padding: 8.2rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: unset !important;
+}
+
+#project .container .projectContent .projectImage{
+    display: flex;
+    justify-content: center;
+}
+
+#project .container .projectContent .projectImage img{
+    height: 40rem;
+    width: 69.4rem;
+    object-fit: contain;
+    border: 1rem solid #1b1919;
+    text-align: center;
+}
+
+#project .container .projectContent .info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 4rem 0;
+}
+
+#project .container .projectContent .info .info-container{
+    border-radius: 1rem;
+    padding: 2.2rem;
+    margin: 8.2rem 0;
+    margin-right: 45rem;
+    z-index: 1;
+    position: fixed;
+    border:1rem solid;
+    width: 50rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#project .container .projectContent .info .info-container h1{
+    font-size: 1.56rem;
+    color: rgb(46, 44, 44);
+    padding: 0.96rem 0;
+    font-weight: bold;
+}
+
+#project .container .projectContent .info .info-container h1 span{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 1.5rem;
+    padding-left: .3rem;
+}
+
+#project .container .projectContent .info .info-container h1 a{
+    font-size: 1.2rem;
+    padding-left: .3rem;
+}
+
+#project .container .projectContent .info .RightImg{
+    width: 63rem;
+    height: 66rem;
+    overflow: hidden;
+}
+
+#project .container .projectContent .info .RightImg img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#project .container .projectContent  .desc_content_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+} 
+
+#project .container .projectContent  .desc_content_container .LeftImg{
+    width: 63rem;
+    height: 66rem;
+    overflow: hidden;
+}
+
+#project .container .projectContent  .desc_content_container .LeftImg img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#project .container .projectContent  .desc_content_container .content{
+    padding: 3.2rem;
+    margin: 0 0 3.2rem 0;
+    position: fixed;
+    border-radius: 1rem;
+    border: 1rem solid;
+    width: 52rem;
+    margin-left: 41rem;
+    background-color: white;
+}
+
+#project .container .projectContent  .desc_content_container .content h1{
+    font-size: 2.56rem;
+    color: rgb(46, 44, 44);
+    margin: 0.96rem 0;
+    font-weight: bold;
+}
+
+#project .container .projectContent  .desc_content_container .content span{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+#project .container .projectContent .imageslayoutOne{
+    margin: 13rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project .container .projectContent .imageslayoutOne .imageOne{
+    margin: 0 2rem;
+    border: 1rem solid;
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#project .container .projectContent .imageslayoutOne .imageOne .carousel-root .carousel .control-dots .dot{
+    color: #040404;
+}
+
+#project .container .projectContent .imageslayoutOne h1{
+    font-size: 2.56rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem #313030;
+    color: rgb(241,234,234) !important;
+    padding: 0.96rem 8rem !important;
+    font-weight: bold;
+    padding-bottom: 1.6rem;
+}
+
+
+#project .container .projectContent .imageslayoutTwo{
+    margin: 13rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project .container .projectContent .imageslayoutTwo .imageTwo{
+    margin: 0 2rem;
+    border: 1rem solid;
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#project .container .projectContent .imageslayoutTwo .imageTwo .carousel-root .carousel .control-dots .dot{
+    color: #040404;
+}
+
+#project .container .projectContent .imageslayoutTwo h1{
+    font-size: 2.56rem;
+    color: rgb(241,234,234) !important;
+    padding: 0.96rem 8rem !important;
+    font-weight: bold;
+    padding-bottom: 1.6rem;
+}
+
+
+/* @media(max-width:991px ){
+    #project{
+        width:calc(100vw - 26rem) !important;
+        margin-left: 26rem !important;
+    }
+} */
+
+@media screen and (max-width:550px){
+    #project .container .projectContent .info {
+        justify-content: center;
+    }
+    #project .container .projectContent .info .info-container {
+       position: unset; 
+       margin-right: unset;
+    }
+    #project .container .projectContent .info .RightImg {
+       display: none;
+    }
+    #project .container .projectContent .desc_content_container {
+        justify-content: center;
+    }
+    #project .container .projectContent .desc_content_container .LeftImg {
+      display: none;
+    }
+    #project .container .projectContent .desc_content_container .content {
+        padding: 3.2rem;
+        margin: unset;
+        position: unset;
+        width: 64rem;
+        margin-left: unset;
+    }
+    #project .container .projectContent .imageslayoutOne {
+        flex-direction: column;
+    }
+    #project .container .projectContent .imageslayoutTwo {
+        flex-direction: column;
+        margin: 0 0 13rem 0;
+    }
+    #project .container .projectContent .imageslayoutTwo h1 {
+        position: fixed;
+        margin-top: 38rem;
+    }
+}
+
+@media screen and (max-width:360px){
+    #project .container .projectContent .projectImage img {
+        height: 31rem;
+        width: 53.4rem;
+    }
+}
