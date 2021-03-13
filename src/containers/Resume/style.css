@@ -461,7 +461,7 @@ p{
     }
 }
 
-@media screen and (max-width:550px) and (min-width:361px){
+@media screen and (max-width:550px){
     #resume .container .resumeContent .resumeContainer .resumeform .left {
         width: 18rem !important;
     }
@@ -566,7 +566,7 @@ p{
     }
 }
 
-@media screen and (max-width:360px){
+/* @media screen and (max-width:360px){
     #resume .container .resumeContent .resumeContainer .resumeform .left {
         width: 18rem !important;
     }
@@ -584,7 +584,7 @@ p{
         padding-right: 0.1rem;
     }
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftOne p {
-        margin-left: 0.2rem;
+        margin-left: 0.4rem;
     }
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo h1 {
         font-size: 1.72rem;
@@ -669,4 +669,4 @@ p{
     #resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement p {
         font-size: 0.4rem;
     }
-}
+} */
