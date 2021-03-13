@@ -488,36 +488,36 @@ p{
         padding: 1rem 1.4rem;
         display: unset;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent p{
+    /* #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftTwo .skillcontent p{
         font-size: 0.6rem;
-    }
+    } */
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree {
         margin: 3.8rem 0;
     }
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree h1 {
         font-size: 1.72rem;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent p {
+    /* #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftThree .interestContent p {
         font-size: 0.6rem;
-    }
+    } */
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour {
         margin: 4.4rem 0;
     }
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour h1 {
         font-size: 1.72rem;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent p {
+    /* #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFour .strengthContent p {
         font-size: 0.6rem;
-    }
+    } */
     #resume .container .resumeContent .resumeContainer .resumeform .left .left-content .leftFive {
        display: none;
     }
     #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme h1 {
         font-size: 1.72rem;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme p {
+    /* #resume .container .resumeContent .resumeContainer .resumeform .right .aboutme p {
         font-size: 0.6rem;
-    }
+    } */
     #resume .container .resumeContent .resumeContainer .resumeform .right .internship h1 {
         font-size: 1.72rem;
     }
@@ -527,9 +527,9 @@ p{
     #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern h2 {
         font-size: 1.24rem;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern p {
+    /* #resume .container .resumeContent .resumeContainer .resumeform .right .internship .internContent .internRight .intern p {
         font-size: 0.6rem;
-    }
+    } */
     #resume .container .resumeContent .resumeContainer .resumeform .right .education h1 {
         font-size: 1.72rem;
     }
@@ -541,7 +541,7 @@ p{
     }
     #resume .container .resumeContent .resumeContainer .resumeform .right .education .educationContent .educate .educateRight p {
         text-align: justify;
-        font-size: 0.6rem;
+        /* font-size: 0.6rem; */
     }
     #resume .container .resumeContent .resumeContainer .resumeform .right .projects h1 {
         font-size: 1.72rem;
@@ -552,18 +552,18 @@ p{
     #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight h3 {
         font-size: 1.24rem;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight p {
+    /* #resume .container .resumeContent .resumeContainer .resumeform .right .projects .projectContent .project .projectRight p {
         font-size: 0.6rem;
-    }
+    } */
     #resume .container .resumeContent .resumeContainer .resumeform .right .achievements {
         margin: 2.2rem 0;
     }
     #resume .container .resumeContent .resumeContainer .resumeform .right .achievements h1 {
         font-size: 1.72rem;
     }
-    #resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement p {
+    /* #resume .container .resumeContent .resumeContainer .resumeform .right .achievements .achievementContent .achievement p {
         font-size: 0.6rem;
-    }
+    } */
 }
 
 /* @media screen and (max-width:360px){
