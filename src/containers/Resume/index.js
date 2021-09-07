@@ -3,10 +3,12 @@ import Layout from '../../components/Layout';
 import './style.css';
 import { motion } from 'framer-motion';
 import { FaWpforms, FaMapMarkerAlt, FaPhoneAlt, FaMailBulk, FaTelegramPlane } from 'react-icons/fa';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import loader from '../../images/loader.gif';
 import { urlgenerate } from '../../urlConfig';
 import MobileFooter from '../../components/MobileFooter';
+import axios from '../../components/helpers/axios';
+import {saveAs} from 'file-saver';
 
 
 const containerVariants = {
@@ -69,9 +71,47 @@ const formVariants = {
 
 const ResumeContainer = (props) => {
 
+
+
+
     const resumes = useSelector(state => state.resume.allresumes.getResume);
 
     const loading = useSelector(state=>state.resume.loading);
+
+    const downloadResumePdf = (resume) =>{
+        axios.post(`/generateResumePdf`,resume,
+        // {
+        // 	headers: {
+        // 	  'Content-Type': 'multipart/form-data'
+        // 	},
+        // 	responseType: 'arraybuffer'
+        // }
+        )
+        .then(({data}) => {
+            console.log("PDF Generated", {data});
+            alert.success('Agreement Pdf generated successfully')
+            // async function printTickets() {
+                    
+                //   }
+                //   async function getTicketsPdf(fileName){
+                    return axios.get(`/downloadResumePdf/${data.fileName}`,
+                        {
+                                headers: {
+                                  'Content-Type': 'multipart/form-data'
+                                },
+                                responseType: 'arraybuffer'
+                            }
+                        ).then(({data})=>{
+                            const blob = new Blob([data], { type: 'application/pdf' })
+                            saveAs(blob, "resumeform.pdf")
+                        })
+                        .catch((err)=>console.log(err))
+                // }
+        })
+        .catch(err => {
+          console.log('error', err?.errorMessage)
+        })
+    }
 
     return (
         <>
@@ -102,14 +142,17 @@ const ResumeContainer = (props) => {
                             </div>
                             <div className="line">
                             </div>
+                           
                         </motion.div>
                         <div className="resumeContent">
-                            <motion.div
+                            
+                         <motion.div
                                 variants={formContainerVariants}
                                 initial="hidden"
                                 animate="visible"
                                 exit="exit"
                                 className="resumeContainer">
+                                  
                                 {
                                     resumes && resumes.map((resume, index) =>
                                         <motion.div
@@ -117,9 +160,21 @@ const ResumeContainer = (props) => {
                                             initial="hidden"
                                             animate="visible"
                                             exit="exit"
-                                            className="resumeform"
+                                            
                                             key={index}
                                         >
+                                             <div style={{display:"flex",justifyContent:"flex-end"}}> 
+                            <button style={{
+                                backgroundColor:"white",
+                            padding:"1rem 2rem",
+                            margin:"1rem",
+                            color:"black",
+                            borderRadius:"1rem",
+                            textTransform:"uppercase",
+                            fontWeight:"bold",
+                            fontSize:"1rem"}} onClick={()=>downloadResumePdf(resume)}>Download Pdf</button>
+                            </div>
+                            <div className="resumeform">
                                             <div className="left">
                                                 <div className="profileimage">
                                                     <img src={urlgenerate(resume.profile)} alt="" />
@@ -291,6 +346,7 @@ const ResumeContainer = (props) => {
                                                     </div>
                                                 </div>
                                             </div>
+                                     </div> 
                                         </motion.div>
                                     )
                                 }

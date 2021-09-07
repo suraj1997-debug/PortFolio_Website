@@ -1,6 +1,8 @@
 import axios from '../../components/helpers/axios';
 import {resumeConstants} from '../action/constants';
 
+
+
 export const getResume = () =>{
     return async dispatch=>{
         dispatch({
@@ -31,4 +33,5 @@ export const getResume = () =>{
         }
     }
 }
+
 

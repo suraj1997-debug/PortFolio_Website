@@ -12,6 +12,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import {  getResume } from './redux/store';
 import PortFolioContainer from './containers/PortFolio';
+
 function App() {
 
   const dispatch = useDispatch();

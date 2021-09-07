@@ -2,9 +2,11 @@ import {resumeConstants} from '../action/constants';
 
 const initialState = {
     loading:false,
+    pdfLoading:false,
     error:null,
     allresumes:{},
-    profile:{}
+    profile:{},
+    msg:''
 }
 
 const resumeReducer = (state = initialState,action)=>{
