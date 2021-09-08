@@ -38,9 +38,9 @@ const SidebarNav = (props) =>{
 
   
     return(
-        <>
+        <React.Fragment>
       { nav}                            
-        </>
+        </React.Fragment>
     );
 }
 

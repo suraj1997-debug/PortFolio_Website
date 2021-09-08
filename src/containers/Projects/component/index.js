@@ -79,7 +79,7 @@ function ProjectSlugContainer(props) {
     const loading = useSelector(state=>state.project.loading);
 
     return (
-        <>
+        <React.Fragment>
             {
             loading ? 
        
@@ -182,7 +182,7 @@ function ProjectSlugContainer(props) {
             < MobileFooter />
         </motion.div>
 }
-      </> 
+      </React.Fragment> 
     )
    
 }

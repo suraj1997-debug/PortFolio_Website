@@ -44,7 +44,7 @@ const Sidebar = (props) => {
     const loading = useSelector(state=>state.resume.loading);
 
     return (
-        <>
+        <React.Fragment>
             <input type="checkbox" id="check" />
             <div className="sidebar" style={props.style}>
                 <label for="check" style={{ display: "none" }}>
@@ -96,7 +96,7 @@ const Sidebar = (props) => {
                     </div>
                 </motion.div>
             </div>
-        </>
+        </React.Fragment>
     )
 }
 

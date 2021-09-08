@@ -6,7 +6,7 @@ import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 
 const Skill = (props) => {
     return (
-        <>
+        <React.Fragment>
             <div className="skill">
                 <AnimatedProgressProvider
                     valueStart={0}
@@ -33,7 +33,7 @@ const Skill = (props) => {
                     <p>{props.Skilldesc}</p>
                 </div>
             </div>
-        </>
+        </React.Fragment>
     )
 }
 

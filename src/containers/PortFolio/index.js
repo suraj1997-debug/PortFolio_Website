@@ -69,7 +69,7 @@ const PortFolioContainer = (props) => {
 
 
     return (
-        <>
+        <React.Fragment>
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -173,7 +173,7 @@ const PortFolioContainer = (props) => {
                 </Layout>
                 <MobileFooter />
             </motion.div>
-        </>
+        </React.Fragment>
     )
 }
 

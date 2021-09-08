@@ -109,12 +109,12 @@ const ResumeContainer = (props) => {
                 // }
         })
         .catch(err => {
-          console.log('error', err?.errorMessage)
+          console.log('error', err)
         })
     }
 
     return (
-        <>
+        <React.Fragment>
           {
             loading ? 
        
@@ -358,7 +358,7 @@ const ResumeContainer = (props) => {
             < MobileFooter />
         </motion.div>
         }
-        </>
+        </React.Fragment>
     );
 }
 

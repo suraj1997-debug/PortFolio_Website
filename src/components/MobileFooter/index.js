@@ -4,7 +4,7 @@ import './style.css';
 
 const MobileFooter = (props) => {
     return (
-        <>
+        <React.Fragment>
             <div className="Mobile-Footer">
                 <h1>2020 © SurajBhangu<span>|All Rights Reserved.</span></h1>
                 <div className="mobilefootericons">
@@ -15,7 +15,7 @@ const MobileFooter = (props) => {
                 </div>
                 
             </div>
-        </>
+        </React.Fragment>
     );
 }
 

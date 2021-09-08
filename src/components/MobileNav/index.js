@@ -22,9 +22,9 @@ const MobileNav = (props) =>{
 
   
     return(
-        <>
+        <React.Fragment>
       { nav}                            
-        </>
+        </React.Fragment>
     );
 }
 

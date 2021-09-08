@@ -5,7 +5,7 @@ import './style.css';
     const [focus,setFocus] = useState(props.value === "" ? false:true);
     const [touch,setTouch] = useState(false);
     return(
-        <>
+      
         <div className="materialInput">
             <label
             className={`label ${focus ? "focus" : ""}`}
@@ -51,7 +51,6 @@ import './style.css';
 
         </div>
 
-        </>
     )
 }
 
@@ -59,7 +58,7 @@ const MaterialTextArea=(props)=>{
     const [focus,setFocus] = useState(props.value === "" ? false:true);
     const [touch,setTouch] = useState(false);
     return(
-        <>
+    
         <div className="materialTextArea">
             <label
             className={`label ${focus ? "focus" : ""}`}
@@ -106,7 +105,6 @@ const MaterialTextArea=(props)=>{
 
         </div>
 
-        </>
     )
 }
 
@@ -138,4 +136,4 @@ const MaterialButton = (props) => {
 
 
 
-export {MaterialInput,MaterialTextArea,MaterialButton};
+export  {MaterialInput,MaterialTextArea,MaterialButton};

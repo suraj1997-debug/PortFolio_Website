@@ -7,7 +7,7 @@ const CVButton = (props) =>{
         props.onClick && props.onClick();
     }
     return(
-        <>
+        <React.Fragment>
         <NavLink className = "midbtn"
         to={`${props.href}`} 
         style={{
@@ -18,7 +18,7 @@ const CVButton = (props) =>{
         >
             {props.name && props.name}
         </NavLink>
-        </>
+        </React.Fragment>
     )
 }
 

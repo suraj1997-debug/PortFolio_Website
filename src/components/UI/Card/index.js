@@ -13,7 +13,7 @@ const hoverVariants = {
 }
 const Card = (props) =>{
     return(
-        <>
+        <React.Fragment>
         <div className="Card">
             <div className="Card-container">
                 <div className="image" style={{overflow:"hidden"}}>
@@ -32,7 +32,7 @@ const Card = (props) =>{
                 </div>
             </div>
         </div>
-        </>
+        </React.Fragment>
     );
 }
 

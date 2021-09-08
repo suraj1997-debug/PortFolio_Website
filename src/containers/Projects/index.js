@@ -79,7 +79,7 @@ const ProjectContainer=(props)=>{
   };
 
     return(
-        <>
+        <React.Fragment>
           {
             loading ? 
        
@@ -138,7 +138,7 @@ const ProjectContainer=(props)=>{
         < MobileFooter />
         </motion.div>
 }
-        </>
+        </React.Fragment>
     )
 }
 
