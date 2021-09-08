@@ -9,7 +9,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "d3-ease": "^2.0.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "emailjs-com": "^2.6.4",
     "file-saver": "^2.0.5",
     "framer-motion": "^3.2.1",
