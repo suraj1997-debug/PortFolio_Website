@@ -9,6 +9,7 @@ import { urlgenerate } from '../../urlConfig';
 import MobileFooter from '../../components/MobileFooter';
 import axios from '../../components/helpers/axios';
 import {saveAs} from 'file-saver';
+import {url} from '../../urlConfig';
 
 
 const containerVariants = {
@@ -79,7 +80,7 @@ const ResumeContainer = (props) => {
     const loading = useSelector(state=>state.resume.loading);
 
     const downloadResumePdf = (resume) =>{
-        axios.post(`/generateResumePdf`,resume,
+        axios.post(`/generateResumePdf`,{resume:resume},
         // {
         // 	headers: {
         // 	  'Content-Type': 'multipart/form-data'
@@ -87,21 +88,21 @@ const ResumeContainer = (props) => {
         // 	responseType: 'arraybuffer'
         // }
         )
-        .then(({data}) => {
-            console.log("PDF Generated", {data});
-            alert.success('Agreement Pdf generated successfully')
+        .then((data) => {
+            console.log("PDF Generated", data);
+            // alert.success('Agreement Pdf generated successfully')
             // async function printTickets() {
                     
                 //   }
                 //   async function getTicketsPdf(fileName){
-                    return axios.get(`/downloadResumePdf/${data.fileName}`,
+                    return axios.get(`${url}/downloadResumePdf/${data?.data?.fileName}`,
                         {
                                 headers: {
                                   'Content-Type': 'multipart/form-data'
                                 },
                                 responseType: 'arraybuffer'
                             }
-                        ).then(({data})=>{
+                        ).then(({data})=>{ 
                             const blob = new Blob([data], { type: 'application/pdf' })
                             saveAs(blob, "resumeform.pdf")
                         })
