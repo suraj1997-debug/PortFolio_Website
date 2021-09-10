@@ -80,22 +80,22 @@ const ResumeContainer = (props) => {
     const loading = useSelector(state=>state.resume.loading);
 
     const downloadResumePdf = (resume) =>{
-        axios.post(`/generateResumePdf`,{resume:resume},
-        // {
-        // 	headers: {
-        // 	  'Content-Type': 'multipart/form-data'
-        // 	},
-        // 	responseType: 'arraybuffer'
-        // }
-        )
-        .then((data) => {
-            console.log("PDF Generated", data);
+        // axios.post(`/generateResumePdf`,{resume:resume},
+        // // {
+        // // 	headers: {
+        // // 	  'Content-Type': 'multipart/form-data'
+        // // 	},
+        // // 	responseType: 'arraybuffer'
+        // // }
+        // )
+        // .then((data) => {
+        //     console.log("PDF Generated", data);
             // alert.success('Agreement Pdf generated successfully')
             // async function printTickets() {
                     
                 //   }
                 //   async function getTicketsPdf(fileName){
-                    return axios.get(`${url}/downloadResumePdf/${data?.data?.fileName}`,
+                    return axios.get(`${url}/downloadResumePdf/${resume.pdf}`,
                         {
                                 headers: {
                                   'Content-Type': 'multipart/form-data'
@@ -108,10 +108,10 @@ const ResumeContainer = (props) => {
                         })
                         .catch((err)=>console.log(err))
                 // }
-        })
-        .catch(err => {
-          console.log('error', err)
-        })
+        // })
+        // .catch(err => {
+        //   console.log('error', err)
+        // })
     }
 
     return (
