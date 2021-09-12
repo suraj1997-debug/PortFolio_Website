@@ -102,3 +102,9 @@
         padding: 20rem 6rem !important;
     }
 }
+
+@media screen and (max-width:485px){
+    #project .container .projectContent .projectContainer{
+        grid-template-columns:unset;
+    }
+}
