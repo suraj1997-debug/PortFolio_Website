@@ -5,6 +5,10 @@ import {motion} from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import MobileFooter from '../../components/MobileFooter';
 import CVButton from '../../components/UI/CVButton';
+import axios from '../../components/helpers/axios';
+import {saveAs} from 'file-saver';
+import {url} from '../../urlConfig';
+import { useSelector } from 'react-redux';
 
 const containerVariants = {
     hidden:{
@@ -46,8 +50,27 @@ const divVariants = {
    }
 }
 
-const HomeContainer = (props) => {
 
+
+const HomeContainer = (props) => {
+    const resumes = useSelector(state => state.resume.allresumes.getResume);
+
+const downloadResumePdf = (resumes) =>{
+           
+    return axios.get(`${url}/downloadResumePdf/${resumes.length > 0 && resumes[0].pdf}`,
+        {
+                headers: {
+                  'Content-Type': 'multipart/form-data'
+                },
+                responseType: 'arraybuffer'
+            }
+        ).then(({data})=>{ 
+            const blob = new Blob([data], { type: 'application/pdf' })
+            saveAs(blob, "resumeform.pdf")
+        })
+        .catch((err)=>console.log(err))
+
+}
 
     return (
         <React.Fragment>
@@ -94,10 +117,11 @@ const HomeContainer = (props) => {
                                 /></li>
                                 <li>
                                 <CVButton 
-                                name="My CV"
+                                name="Download CV"
                                 bgColor="#080813"
                                 Color="white"
-                                href={"/resume"}
+                                onClick={()=>downloadResumePdf(resumes)}
+                                // href={"/resume"}
                                 /></li>
                             </div>
                             

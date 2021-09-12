@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeContainer from './containers/Home';
 import {Route, Switch,useLocation} from 'react-router-dom';
 import AboutContainer from './containers/About';
-import ResumeContainer from './containers/Resume';
+// import ResumeContainer from './containers/Resume';
 import ContactContainer from './containers/Contact';
 import ProjectContainer from './containers/Projects';
 import { AnimatePresence } from 'framer-motion';
@@ -30,7 +30,7 @@ function App() {
       <Switch location={location} key={location.key}>
      <Route exact path="/" component={HomeContainer}/>
      <Route  path="/about" component={AboutContainer}/>
-     <Route  path="/resume" component={ResumeContainer}/>
+     {/* <Route  path="/resume" component={ResumeContainer}/> */}
      <Route  path="/contact" component={ContactContainer}/>
      <Route path="/skillsets" component={PortFolioContainer}/>
      <Route  path="/projects" component={ProjectContainer}/>

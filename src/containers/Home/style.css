@@ -74,6 +74,7 @@
 #background .mid-Content .midfooter{
     display: flex;
     margin-top: 4rem;
+    align-items: baseline;
 }
 
 #background .mid-Content .midfooter li:first-child a:hover {

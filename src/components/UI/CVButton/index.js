@@ -8,8 +8,20 @@ const CVButton = (props) =>{
     }
     return(
         <React.Fragment>
+            {
+                !props.href ? 
+                <button className = "btncv"
+        style={{
+          backgroundColor: props.bgColor,
+          color: props.Color
+        }}
+        onClick={onClick}
+        >
+            {props.name && props.name}
+        </button>
+                :
         <NavLink className = "midbtn"
-        to={`${props.href}`} 
+        to={`${props.href}`}  
         style={{
           backgroundColor: props.bgColor,
           color: props.Color
@@ -18,6 +30,7 @@ const CVButton = (props) =>{
         >
             {props.name && props.name}
         </NavLink>
+}
         </React.Fragment>
     )
 }
