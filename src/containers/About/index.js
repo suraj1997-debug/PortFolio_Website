@@ -94,7 +94,7 @@ const AboutContainer = () => {
                             exit="exit"
                              className="left">
                                 <h1>Mern Stack Developer</h1>
-                                <p>I am a hardworking engineering graduate specialized in Computer Science Engineering graduated from G.H. Raisoni College of Engineering And Management,Wagholi,Pune with an overall CGPA of 7.4.</p>
+                                <p>I am a hardworking engineering graduate specialized in Computer Science Engineering graduated from G.H. Raisoni College of Engineering And Management,Wagholi,Pune in the year 2020 with an overall CGPA of 7.4.</p>
                                 <p>I belong to Silvassa which is a small town in Dadra and Nagar Haveli situated near Gujarat. </p>
                             </motion.div>
                             <motion.div
@@ -105,7 +105,7 @@ const AboutContainer = () => {
                             className="right">
                             <h1>Personal Information</h1>
                              <p>Name: Suraj Bhangu</p>
-                             <p>Age: 23</p>
+                             <p>Age: 24</p>
                              <p>Address: I1-106,Yogi Milan Society,Ring Road,Silvassa,Dadra and Nagar Haveli</p>
                              <p>PinCode:396230</p>
                              <p>Email:suraj18903@gmail.com</p>

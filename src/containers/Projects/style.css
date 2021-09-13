@@ -63,7 +63,7 @@
     margin-top: 3.2rem;
     background: linear-gradient(45deg,#211414, #353cb1);
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     grid-gap: 5rem;
 }
 
@@ -101,6 +101,9 @@
     #project .container {
         padding: 20rem 6rem !important;
     }
+    /* #project .container .projectContent .projectContainer{
+        grid-template-columns:1fr 1fr;
+    } */
 }
 
 @media screen and (max-width:485px){

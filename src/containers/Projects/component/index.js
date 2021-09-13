@@ -76,115 +76,115 @@ function ProjectSlugContainer(props) {
         return "";
     };
 
-    const loading = useSelector(state=>state.project.loading);
+    const loading = useSelector(state => state.project.loading);
 
     return (
         <React.Fragment>
             {
-            loading ? 
-       
-            <div className="loader"><img src={loader} alt=""/></div>
-           
-            : 
-            <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            className="Flex-Row" style={{ backgroundColor: "black" }}>
-            <Layout style={{ position: "fixed", width: "20.5rem" }}>
-                <div id="project" style={{ backgroundColor: "black", width: "calc(100vw - 20.5rem)", height: "100vh", marginLeft: "19.2rem" }}>
-                    <div className="container">
-                        <motion.div
-                            variants={headerVariants}
-                            initial="hidden"
-                            animate="visible"
-                            exit="exit"
-                            className="projectHeading">
-                            <div className="header">
-                                <h1>{project.projectTitle}</h1>
-                                <span><FaBriefcase /></span>
-                            </div>
-                            <div className="line">
-                            </div>
-                        </motion.div>
-                        <motion.div
-                            variants={projectVariants}
-                            initial="hidden"
-                            animate="visible"
-                            exit="exit"
-                            className="projectContent">
-                            <div className="projectImage">
-                                <img src={project.frontend && urlgenerate(project.frontend[3].img)} alt="" />
+                loading ?
 
-                            </div>
-                            <div className="info">
-                                <div  className="info-container" style={{ marginBottom: "2rem" }}>
-                                    <div className="infoContent">
-                                        <h1>Title:<span style={{ marginBottom: "1rem" }}>{project.projectTitle}</span></h1>
-                                        <h1>Project Type:<span>{project.projectType}</span></h1>
-                                        <h1>Upload Date:<span style={{ marginBottom: "1rem" }}>{formatDate(project.date)}</span></h1>
-                                        <h1>Github URL:<a href={project.url}>{project.url}</a></h1>
-                                    </div>
-                                </div>
-                                <div  className="RightImg">
-                                    <img src={RightMe} alt="" />
-                                </div>
-                            </div>
-                            <div className="desc_content_container">
-                                <div className="LeftImg">
-                                    <img src={LeftMe} alt="" />
-                                </div>
-                                <div className="content">
-                                    <h1>Description:</h1><span>{project.description}</span>
-                                </div>
-                            </div>
-                            <div className="imageslayoutOne">
-                                <div className="imageOne">
-                                    <Carousel renderThumbs={() => { }}>
-                                        {
-                                            project.frontend && project.frontend.map((front, index) =>
-                                                <div key={index}
-                                                    style={{ display: "block" }}
+                    <div className="loader"><img src={loader} alt="" /></div>
 
-                                                >
-                                                    <img src={urlgenerate(front.img)} alt="" />
+                    :
+                    <motion.div
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                        className="Flex-Row" style={{ backgroundColor: "black" }}>
+                        <Layout style={{ position: "fixed", width: "20.5rem" }}>
+                            <div id="project" style={{ backgroundColor: "black", width: "calc(100vw - 20.5rem)", height: "100vh", marginLeft: "19.2rem" }}>
+                                <div className="container">
+                                    <motion.div
+                                        variants={headerVariants}
+                                        initial="hidden"
+                                        animate="visible"
+                                        exit="exit"
+                                        className="projectHeading">
+                                        <div className="header">
+                                            <h1>{project.projectTitle}</h1>
+                                            <span><FaBriefcase /></span>
+                                        </div>
+                                        <div className="line">
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        variants={projectVariants}
+                                        initial="hidden"
+                                        animate="visible"
+                                        exit="exit"
+                                        className="projectContent">
+                                        <div className="projectImage">
+                                            <img src={project.frontend && urlgenerate(project.frontend[3].img)} alt="" />
+
+                                        </div>
+                                        <div className="info">
+                                            <div className="info-container" style={{ marginBottom: "2rem" }}>
+                                                <div className="infoContent">
+                                                    <h1>Title:<span style={{ marginBottom: "1rem" }}>{project.projectTitle}</span></h1>
+                                                    <h1>Project Type:<span>{project.projectType}</span></h1>
+                                                    <h1>Upload Date:<span style={{ marginBottom: "1rem" }}>{formatDate(project.date)}</span></h1>
+                                                    <h1>Github URL:<a href={project.url}>{project.url}</a></h1>
                                                 </div>
-                                            )
-                                        }
+                                            </div>
+                                            <div className="RightImg">
+                                                <img src={RightMe} alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="desc_content_container">
+                                            <div className="LeftImg">
+                                                <img src={LeftMe} alt="" />
+                                            </div>
+                                            <div className="content">
+                                                <h1>Description:</h1><span>{project.description}</span>
+                                            </div>
+                                        </div>
+                                                <div className="imageslayoutOne">
+                                                    <div className="imageOne">
+                                                        <Carousel renderThumbs={() => { }}>
+                                                            {
+                                                                project.frontend && project.frontend.map((front, index) =>
+                                                                    <div key={index}
+                                                                        style={{ display: "block" }}
 
-                                    </Carousel>
-                                </div>
-                                <h1>Frontend<span style={{paddingLeft:"1rem"}}>Images</span></h1>
-                            </div>
-                            <div className="imageslayoutTwo">
-                            <h1>AdminDashboard<span style={{paddingLeft:"1rem"}}>Images</span></h1>
-                                <div className="imageTwo">
-                                    <Carousel renderThumbs={() => { }}>
-                                        {
-                                            project.admindashboard && project.admindashboard.map((admin, index) =>
-                                                <div key={index}
-                                                    style={{ display: "block" }}
+                                                                    >
+                                                                        <img src={urlgenerate(front.img)} alt="" />
+                                                                    </div>
+                                                                )
+                                                            }
 
-                                                >
-                                                    <img src={urlgenerate(admin.img)} alt="" />
+                                                        </Carousel>
+                                                    </div>
+                                                    <h1>Frontend<span style={{ paddingLeft: "1rem" }}>Images</span></h1>
                                                 </div>
-                                            )
-                                        }
+                                                <div className="imageslayoutTwo">
+                                                    <h1>AdminDashboard<span style={{ paddingLeft: "1rem" }}>Images</span></h1>
+                                                    <div className="imageTwo">
+                                                        <Carousel renderThumbs={() => { }}>
+                                                            {
+                                                                project.admindashboard && project.admindashboard.map((admin, index) =>
+                                                                    <div key={index}
+                                                                        style={{ display: "block" }}
 
-                                    </Carousel>
+                                                                    >
+                                                                        <img src={urlgenerate(admin.img)} alt="" />
+                                                                    </div>
+                                                                )
+                                                            }
+
+                                                        </Carousel>
+                                                    </div>
+                                                </div>
+                                    </motion.div>
                                 </div>
                             </div>
-                        </motion.div>
-                    </div>
-                </div>
-            </Layout>
-            < MobileFooter />
-        </motion.div>
-}
-      </React.Fragment> 
+                        </Layout>
+                        < MobileFooter />
+                    </motion.div>
+            }
+        </React.Fragment>
     )
-   
+
 }
 
 export default ProjectSlugContainer;
