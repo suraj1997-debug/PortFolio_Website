@@ -107,7 +107,7 @@ const AboutContainer = () => {
                                 <h1>Personal Information</h1>
                                 <p>Name: Suraj Bhangu</p>
                                 <p>Age: 24</p>
-                                <p>Address: I1-106,Yogi Milan Society,Ring Road,Silvassa,Dadra and Nagar Haveli</p>
+                                <p>Address: A-1 ,Pramukh Sanghat Society,Samarvarni,Silvassa,Dadra and Nagar Haveli</p>
                                 <p>PinCode:396230</p>
                                 <p>Email:suraj18903@gmail.com</p>
                                 <p>Phone:7984818881</p>
