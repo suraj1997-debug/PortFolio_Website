@@ -5,7 +5,7 @@
   height: 4.8rem;
   position: relative;
   }
-  .materialInput input{
+  .materialInput .input{
     width: 29rem;
     flex: 1 1;
     z-index: 1;

@@ -115,7 +115,7 @@ function ProjectSlugContainer(props) {
                                         exit="exit"
                                         className="projectContent">
                                         <div className="projectImage">
-                                            <img src={project.frontend && urlgenerate(project.frontend[3].img)} alt="" />
+                                            <img src={project.frontend && urlgenerate(project.frontend[0].img)} alt="" />
 
                                         </div>
                                         <div className="info">
@@ -155,10 +155,10 @@ function ProjectSlugContainer(props) {
 
                                                         </Carousel>
                                                     </div>
-                                                    <h1>Frontend<span style={{ paddingLeft: "1rem" }}>Images</span></h1>
+                                                    <h1>Website<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
                                                 </div>
                                                 <div className="imageslayoutTwo">
-                                                    <h1>AdminDashboard<span style={{ paddingLeft: "1rem" }}>Images</span></h1>
+                                                    <h1>Dashboard<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
                                                     <div className="imageTwo">
                                                         <Carousel renderThumbs={() => { }}>
                                                             {

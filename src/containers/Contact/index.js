@@ -83,7 +83,7 @@ const ContactContainer = (props) => {
           ) {
             return;
           }
-    emailjs.sendForm('gmail','template_sxjmxsx', e.target,'user_wmorGRqttTWpHno0eLUTd',{
+    emailjs.sendForm('service_66m2bom','template_a7mke05', e.target,'DWw6T0P46804dWUT8',{
         to_name: "suraj"
     })
     .then((response) => {
@@ -193,8 +193,6 @@ const ContactContainer = (props) => {
                             </motion.div>
                         </motion.div>
                         }
-                        
-                        
                     </div>
                 </div>
             </Layout>
