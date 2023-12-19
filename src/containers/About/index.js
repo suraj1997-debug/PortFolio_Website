@@ -109,7 +109,7 @@ const AboutContainer = () => {
                                 <p>Age: 26</p>
                                 <p>Address: A-1 ,Pramukh Sanghat Society,Samarvarni,Silvassa,Dadra and Nagar Haveli</p>
                                 <p>PinCode:396230</p>
-                                <p>Email:suraj18903@gmail.com</p>
+                                <p>Email:singhsurajraj1997@gmail.com</p>
                                 <p>Phone:7984818881</p>
                             </motion.div>
                         </div>
