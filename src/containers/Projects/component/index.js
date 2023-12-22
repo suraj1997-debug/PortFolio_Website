@@ -69,7 +69,7 @@ function ProjectSlugContainer(props) {
     }, [])
 
     const project = useSelector(state => state.project.project);
-    const projectRed = useSelector(state => state.project);
+    const projectCategory = useSelector(state => state.project?.projectCategory);
     const formatDate = (date) => {
         if (date) {
             const d = new Date(date);
@@ -105,7 +105,7 @@ function ProjectSlugContainer(props) {
                                         className="projectHeading">
                                         <div className="header">
                                             <h1> 
-                                            <Link to={`/projects/${projectRed?.projectCategory?.slug}`} style={{color:"white"}}><IoArrowUndoCircle /></Link>
+                                            <Link to={`/projects/${projectCategory?.slug}`} style={{color:"white"}}><IoArrowUndoCircle /></Link>
                                             {`  ${project.projectTitle}`}</h1>
                                             <span><FaBriefcase /></span>
                                         </div>
@@ -159,7 +159,7 @@ function ProjectSlugContainer(props) {
 
                                                         </Carousel>
                                                     </div>
-                                                    <h1>Website<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
+                                                    <h1>{projectCategory?.Category != "Websites" ? project?.projectTitle : "Website"}<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
                                                 </div>
                                                 <div className="imageslayoutTwo">
                                                     <h1>Dashboard<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
