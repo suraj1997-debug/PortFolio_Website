@@ -94,7 +94,7 @@ const AboutContainer = () => {
                                 exit="exit"
                                 className="left">
                                 <h1>Mern Stack Developer</h1>
-                                <p>Dedicated MERN stack developer with 2.5+ years experience in creating responsive web applications.Proficient in MongoDB, Express.js,
+                                <p>Dedicated MERN stack developer with 2.5+ years work experience in creating responsive web applications.Proficient in MongoDB, Express.js,
                                     React and Node.js. I am enthusiastic about contributing to projects that demand both technical excellence and creative problem-solving.
                                     My aim is to excel in a collaborative environment and help build web solutions that elevate user experiences.</p>
                             </motion.div>
@@ -107,7 +107,7 @@ const AboutContainer = () => {
                                 <h1>Personal Information</h1>
                                 <p>Name: Suraj Bhangu</p>
                                 <p>Age: 26</p>
-                                <p>Address: A-1 ,Pramukh Sanghat Society,Samarvarni,Silvassa,Dadra and Nagar Haveli</p>
+                                <p>Address: A1-704,Pramukh Sanghat Society,Krishna Company Road,Samarvani,Silvassa,Dadra and Nagar Haveli</p>
                                 <p>PinCode:396230</p>
                                 <p>Email:singhsurajraj1997@gmail.com</p>
                                 <p>Phone:7984818881</p>

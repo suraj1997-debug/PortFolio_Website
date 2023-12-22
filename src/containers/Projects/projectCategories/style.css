@@ -1,0 +1,113 @@
+
+ 
+ #project{
+    background-color: black;
+    width: calc(100vw-19.2rem);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+#project .container{
+    width: 100%;
+    padding: 5rem;
+}
+
+#project .container .projectHeading{
+    display: flex;
+    flex-direction: column;
+}
+
+#project .container .projectHeading .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#project .container .projectHeading .header h1{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+#project .container .projectHeading .header span{
+    color: white;
+    font-size: 3.84rem;
+    font-weight: bold;
+    text-decoration:.2rem .2rem .2rem black;
+}
+
+
+#project .container .projectHeading .line{
+    border-top-style: dashed;
+    border-color: #dad5d1;
+    width: 100%;
+    margin-top: .2rem;
+
+}
+
+/* ************* */
+
+#project .container .projectContent{
+   padding: 3.2rem;
+   display: flex;
+   flex-direction: column;
+}
+
+#project .container .projectContent .projectContainer{
+   padding: 4.8rem 8rem;
+   display: grid;
+   border: .2rem dashed;
+   margin-top: 3.2rem;
+   background: linear-gradient(45deg,#211414, #353cb1);
+   place-items: center;
+   grid-template-columns: 1fr 1fr ;
+   grid-gap: 5rem;
+}
+
+@media screen and (max-width:1200px ){
+   #project .container {
+       padding: 10rem 6rem;
+   }
+   #project{
+       width:calc(100vw - 20.6rem) !important;
+       margin-left: 19.1rem !important;
+   }
+  
+}
+
+@media screen and (max-width:1074px){
+   #project{
+       width:calc(100vw - 20.9rem) !important;
+       margin-left: 18.8rem !important;
+   }
+}
+
+@media screen and (max-width:991px) and (min-width:771px){
+   #project{
+       width:calc(100vw - 26rem) !important;
+       margin-left: 26rem !important;
+   }
+}
+
+@media screen and (max-width:770px){
+   #project{
+       margin-left: unset !important;
+       width: 100% !important;
+       height: calc(100vh - 10rem) !important;
+   }
+   #project .container {
+       padding: 20rem 6rem !important;
+   }
+   /* #project .container .projectContent .projectContainer{
+       grid-template-columns:1fr 1fr;
+   } */
+}
+
+@media screen and (max-width:485px){
+   #project .container .projectContent .projectContainer{
+       grid-template-columns:unset;
+   }
+}

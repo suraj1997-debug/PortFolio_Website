@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
-import Layout from '../../components/Layout';
+import Layout from '../../../components/Layout';
 import './style.css';
 import {motion} from 'framer-motion';
 import { FaBriefcase } from 'react-icons/fa';
-import Card from '../../components/UI/Card';
-import { useDispatch, useSelector } from 'react-redux';
-import { getProjects, getSingleProjectCategory } from '../../redux/store';
+import Card from '../../../components/UI/Card';
 import { Link } from 'react-router-dom';
-import MobileFooter from '../../components/MobileFooter';
-import loader from '../../images/loader.gif';
-import { urlgenerate } from '../../urlConfig';
-import { IoArrowUndoCircle } from "react-icons/io5";
+import MobileFooter from '../../../components/MobileFooter';
+import websiteImage from '../../../images/website.jpg';
+import designImage from '../../../images/design.jpg';
+import othersImage from '../../../images/others.jpg';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProjectCategories } from '../../../redux/store';
+// import loader from '../../../images/loader.gif';
  
 
 const containerVariants = {
@@ -20,7 +21,7 @@ const containerVariants = {
     },
     visible:{
         opacity:1,
-         transition:{ duration:1.5}
+        transition:{ duration:1.5}
     },
     exit:{
         x:'-100vw',
@@ -56,39 +57,20 @@ const bodyVariants = {
     }
 }
 
+const ProjectCategoriesContainer=(props)=>{
 
-
-
-
-const ProjectContainer=(props)=>{
-    const { slug } = props.match.params;
     const dispatch = useDispatch();
-    const project = useSelector(state=>state.project);
-    const loading = useSelector(state=>state.project.loading);
 
-  useEffect(()=>{
-    dispatch(getSingleProjectCategory(slug));
-    dispatch(getProjects(slug));
-  },[])
+    useEffect(()=>{
+        dispatch(getProjectCategories());
+    },[])
 
-  const formatDate = (date) => {
-    if (date) {
-      const d = new Date(date);
-      return `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`;
-    }
-    return "";
-  };
-
+    // const loading = useSelector(state=>state.project.loading);
+    const project = useSelector(state => state?.project);
+    
 
     return(
         <React.Fragment>
-          {
-            loading ? 
-       
-            <div className="loader"><img src={loader} alt=""/></div>
-           
-            : 
-            
         <motion.div
          variants={containerVariants}
          initial="hidden"
@@ -105,8 +87,7 @@ const ProjectContainer=(props)=>{
                         exit="exit"
                          className="projectHeading">
                             <div className="header">
-                                <h1>
-                                <Link to={`/project-categories`} style={{color:"white",cursor:"pointer"}}><IoArrowUndoCircle /></Link> {`  ${project?.projectCategory?.Category}`}</h1>
+                                <h1>Project Categories</h1>
                                 <span><FaBriefcase/></span>
                             </div>
                             <div className="line">
@@ -119,22 +100,27 @@ const ProjectContainer=(props)=>{
                              animate="visible"
                              exit="exit"
                              className="projectContainer">
-                                 {
-                                project?.projects?.length > 0 ?  project?.projects?.map(project=>
-                                        <Link to={`/${project.slug}`}>
+                                <Link to={`/projects/${project?.projectCategories?.[1]?.slug}`}>
                                         <Card
-                                        img={urlgenerate(project.frontend[0].img)}
-                                        domain={project.projectType}
-                                        title={project.projectTitle}
-                                        date={formatDate(project.date)}
+                                        img={websiteImage}
+                                        domain= "Development"
+                                        title= "Websites"
                                         />
                                         </Link>
-                                        )
-                                        :
-                                        <>
-                                        <h3 className="errorProject">Projects will be added soon. Stay updated!!</h3>
-                                        </>
-                                 }
+                                        <Link to={`/projects/${project?.projectCategories?.[2]?.slug}`}>
+                                        <Card
+                                        img={designImage}
+                                        domain= "Design"
+                                        title="Design Layouts"
+                                        />
+                                        </Link>
+                                        <Link to={`/projects/${project?.projectCategories?.[0]?.slug}`}>
+                                        <Card
+                                        img={othersImage}
+                                        domain= "Development"
+                                        title= "Other Projects"
+                                        />
+                                        </Link>
                             </motion.div>
                         </div>
                     </div>
@@ -142,9 +128,8 @@ const ProjectContainer=(props)=>{
         </Layout>
         < MobileFooter />
         </motion.div>
-}
         </React.Fragment>
     )
 }
 
-export default ProjectContainer;
+export default ProjectCategoriesContainer;

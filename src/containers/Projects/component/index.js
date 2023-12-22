@@ -3,7 +3,7 @@ import Layout from '../../../components/Layout';
 import './style.css';
 import { motion } from 'framer-motion';
 import { FaBriefcase } from 'react-icons/fa';
-import { getprojectBySlug } from '../../../redux/store';
+import { getSingleProjectCategoryByProjectSlug, getprojectBySlug } from '../../../redux/store';
 import { useDispatch, useSelector } from 'react-redux';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -12,6 +12,8 @@ import RightMe from '../../../images/portfolio_right.png';
 import LeftMe from '../../../images/portfolio_left.png';
 import loader from '../../../images/loader.gif';
 import { urlgenerate } from '../../../urlConfig';
+import { IoArrowUndoCircle } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 const containerVariants = {
@@ -57,17 +59,17 @@ const projectVariants = {
     }
 }
 function ProjectSlugContainer(props) {
-    console.log(props);
     const { slug } = props.match.params;
     console.log(slug);
     const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(getSingleProjectCategoryByProjectSlug(slug));
         dispatch(getprojectBySlug(slug));
     }, [])
 
     const project = useSelector(state => state.project.project);
-
+    const projectRed = useSelector(state => state.project);
     const formatDate = (date) => {
         if (date) {
             const d = new Date(date);
@@ -102,7 +104,9 @@ function ProjectSlugContainer(props) {
                                         exit="exit"
                                         className="projectHeading">
                                         <div className="header">
-                                            <h1>{project.projectTitle}</h1>
+                                            <h1> 
+                                            <Link to={`/projects/${projectRed?.projectCategory?.slug}`} style={{color:"white"}}><IoArrowUndoCircle /></Link>
+                                            {`  ${project.projectTitle}`}</h1>
                                             <span><FaBriefcase /></span>
                                         </div>
                                         <div className="line">

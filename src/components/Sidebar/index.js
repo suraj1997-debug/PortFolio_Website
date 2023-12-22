@@ -34,7 +34,7 @@ const Sidebar = (props) => {
         { label: "Home", link: "/", icon: <FaHome /> },
         { label: "About Me", link: "/about", icon: <FaUserCircle /> },
         { label: "SkillSets", link: "/skillsets", icon: <FaChartBar /> },
-        { label: "Projects", link: "/projects", icon: <FaBriefcase /> },
+        { label: "Projects", link: "/project-categories", icon: <FaBriefcase /> },
         // { label: "Blog" , link:"/blog",icon:<FaBook/>},
         { label: "Contact", link: "/contact", icon: <FaEnvelope /> }
     ]
@@ -88,8 +88,8 @@ const Sidebar = (props) => {
                             <span>All Rights Reserved.</span>
                             <h1 style={{paddingTop:"1rem",color:"brown"}}>Follow Me on:</h1>
                             <div className="sidebarfootericons">
-                                <a href="https://www.facebook.com/suraj.jeetendra.bhangu"><FaFacebook /></a>
-                                <a href="https://www.instagram.com/suraj_j_singh"><FaInstagram /></a>
+                                {/* <a href="https://www.facebook.com/suraj.jeetendra.bhangu"><FaFacebook /></a> */}
+                                <a href="https://www.instagram.com/surajjsingh1997"><FaInstagram /></a>
                                 <a href="https://www.linkedin.com/in/suraj-bhangu"><FaLinkedin /></a>
                             </div>
                         </div>

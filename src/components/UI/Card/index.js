@@ -24,10 +24,10 @@ const Card = (props) =>{
                    src={props.img} alt=""/>
                 </div>
                 <div className="Card-content">
-                    <div className="contentcontain">
+                    <div className={props?.date ? `contentcontain` : `contentcontain withoutDate` }>
                     <p style={{ color:"rgb(29, 101, 105)"}}>{props.domain}</p>
                     <h3>{props.title}</h3>
-                    <p>{props.date}</p>
+                    { props?.date && <p>{props.date}</p>}
                     </div>
                 </div>
             </div>

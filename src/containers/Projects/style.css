@@ -67,6 +67,14 @@
     grid-gap: 5rem;
 }
 
+.errorProject{
+    color: #ccbebe;
+    font-size: 1.9rem;
+    font-style: italic;
+    font-family: emoji;
+    text-shadow: 0.048rem 0.048rem 0.048rem black;
+}
+
 @media screen and (max-width:1200px ){
     #project .container {
         padding: 10rem 6rem;

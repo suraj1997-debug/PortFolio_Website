@@ -13,6 +13,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import {  getResume } from './redux/store';
 import PortFolioContainer from './containers/PortFolio';
+import ProjectCategoriesContainer from './containers/Projects/projectCategories';
 
 function App() {
 
@@ -33,7 +34,8 @@ function App() {
      {/* <Route  path="/resume" component={ResumeContainer}/> */}
      <Route  path="/contact" component={ContactContainer}/>
      <Route path="/skillsets" component={PortFolioContainer}/>
-     <Route  path="/projects" component={ProjectContainer}/>
+     <Route path="/project-categories" component={ProjectCategoriesContainer} />
+     <Route  path="/projects/:slug" component={ProjectContainer}/>
      <Route  path="/:slug" component={ProjectSlugContainer}/>
      </Switch>
      </AnimatePresence>

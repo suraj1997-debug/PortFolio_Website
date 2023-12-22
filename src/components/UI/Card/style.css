@@ -53,6 +53,10 @@
     text-shadow: 0.048rem 0.048rem 0.048rem black;
 }
 
+.withoutDate{
+    transform: translateY(-3.04rem) !important;
+}
+
 
 
 

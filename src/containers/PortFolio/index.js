@@ -114,56 +114,154 @@ const PortFolioContainer = (props) => {
                                     textColor="white"
                                     pathColor="#ffe227"
                                     Skillname="HTML/CSS"
-                                    Skilldesc="hands on experience on html/css"
+                                    Skilldesc="2.5+ years work experience"
                                     />
                                      <Skill 
                                     skillpercent={70}
                                     textColor="white"
-                                    pathColor="#314e52"
-                                    Skillname="Reactjs/Redux"
-                                    Skilldesc="hands on experience on Reactjs/Redux"
-                                    />
-                                    <Skill 
-                                    skillpercent={90}
-                                    textColor="white"
-                                    pathColor="#00af91"
-                                    Skillname="Bootstrap"
-                                    Skilldesc="hands on experience on Bootstrap"
+                                    pathColor="#28CE26"
+                                    Skillname="React.js/Redux"
+                                    Skilldesc="2.5+ years work experience"
                                     />
                                       <Skill 
                                     skillpercent={70}
                                     textColor="white"
                                     pathColor="#a20a0a"
                                     Skillname="Nodejs"
-                                    Skilldesc="hands on experience on Nodejs"
+                                    Skilldesc="2.5+ years work experience"
                                     />
                                     <Skill 
                                     skillpercent={70}
                                     textColor="white"
-                                    pathColor="#350b40"
+                                    pathColor="#09FFF4"
                                     Skillname="JavaScript"
-                                    Skilldesc="hands on experience on javascript"
+                                    Skilldesc="2.5+ years work experience"
                                     />
                                     <Skill 
                                     skillpercent={80}
                                     textColor="white"
                                     pathColor="#ff5200"
                                     Skillname="RestAPIs"
-                                    Skilldesc="hands on experience on RestAPIs"
+                                    Skilldesc="2.5+ years work experience"
                                     />
                                      <Skill 
                                     skillpercent={70}
                                     textColor="white"
                                     pathColor="#58391c"
                                     Skillname="MongoDB"
-                                    Skilldesc="hands on experience on MongoDB"
+                                    Skilldesc="2.5+ years work experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={90}
+                                    textColor="white"
+                                    pathColor="#00af91"
+                                    Skillname="Bootstrap"
+                                    Skilldesc="2.5+ years work experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={90}
+                                    textColor="white"
+                                    pathColor="#FF09E1"
+                                    Skillname="Tailwind CSS"
+                                    Skilldesc="2.5+ years work experience"
                                     />
                                     <Skill 
                                     skillpercent={70}
                                     textColor="white"
                                     pathColor="#295939"
                                     Skillname="Git & GitHub"
-                                    Skilldesc="hands on experience on Git & GitHub"
+                                    Skilldesc="2.5+ years work experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={70}
+                                    textColor="white"
+                                    pathColor="#A9A51E"
+                                    Skillname="TypeScript"
+                                    Skilldesc="1 year work experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={70}
+                                    textColor="white"
+                                    pathColor="#B05C5C"
+                                    Skillname="Firebase"
+                                    Skilldesc="1 year work experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={60}
+                                    textColor="white"
+                                    pathColor="#207280"
+                                    Skillname="Socket.io"
+                                    Skilldesc="1 year work experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={60}
+                                    textColor="white"
+                                    pathColor="#8CCD8B"
+                                    Skillname="Couchbase"
+                                    Skilldesc="1 year work experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={60}
+                                    textColor="white"
+                                    pathColor="#D3C381"
+                                    Skillname="Jira"
+                                    Skilldesc="1 year work experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={60}
+                                    textColor="white"
+                                    pathColor="#D38195"
+                                    Skillname="Jenkins"
+                                    Skilldesc="1 year work experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={60}
+                                    textColor="white"
+                                    pathColor="#8C286E"
+                                    Skillname="AWS S3"
+                                    Skilldesc="1 year hands on experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={50}
+                                    textColor="white"
+                                    pathColor="#767271"
+                                    Skillname="Next.js"
+                                    Skilldesc="6 months hands on experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={50}
+                                    textColor="white"
+                                    pathColor="#522F28"
+                                    Skillname="React Native"
+                                    Skilldesc="6 months hands on experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={50}
+                                    textColor="white"
+                                    pathColor="#8F03FC"
+                                    Skillname="PHP"
+                                    Skilldesc="6 months hands on experience"
+                                    />
+                                     <Skill 
+                                    skillpercent={50}
+                                    textColor="white"
+                                    pathColor="#4CFA00"
+                                    Skillname="MySQL"
+                                    Skilldesc="6 months hands on experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={70}
+                                    textColor="white"
+                                    pathColor="#FF5733"
+                                    Skillname="C++"
+                                    Skilldesc="1+ years hands on experience"
+                                    />
+                                    <Skill 
+                                    skillpercent={50}
+                                    textColor="white"
+                                    pathColor="#B5B8B3"
+                                    Skillname="Java"
+                                    Skilldesc="6 months hands on experience"
                                     />
                                     </motion.div>
                                 </div>
