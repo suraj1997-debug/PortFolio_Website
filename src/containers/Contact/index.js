@@ -187,7 +187,7 @@ const ContactContainer = (props) => {
                               animate="visible"
                               exit="exit"
                              className="contactFooter">
-                                <p className="footerText"><span><FaTelegram/></span>suraj18903@gmail.com</p>
+                                <p className="footerText"><span><FaTelegram/></span>singhsurajraj1997@gmail.com</p>
                                 <p className="footerText"><span><FaMapMarkerAlt/></span>A1-704,Pramukh Sanghat Society,Krishna Company Road,Samarvani,Silvassa,Dadra and Nagar Haveli</p>
                                 <p className="footerText"><span><MdPhone/></span>7984818881</p>
                             </motion.div>
