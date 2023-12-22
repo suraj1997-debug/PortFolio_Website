@@ -172,48 +172,48 @@ const PortFolioContainer = (props) => {
                                     Skillname="Git & GitHub"
                                     Skilldesc="2.5+ years work experience"
                                     />
-                                     {/* <Skill 
+                                     <Skill 
                                     skillpercent={70}
                                     textColor="white"
                                     pathColor="#A9A51E"
                                     Skillname="TypeScript"
                                     Skilldesc="1 year work experience"
-                                    /> */}
-                                    {/* <Skill 
+                                    />
+                                    <Skill 
                                     skillpercent={70}
                                     textColor="white"
                                     pathColor="#B05C5C"
                                     Skillname="Firebase"
                                     Skilldesc="1 year work experience"
-                                    /> */}
-                                    {/* <Skill 
+                                    />
+                                    <Skill 
                                     skillpercent={60}
                                     textColor="white"
                                     pathColor="#207280"
                                     Skillname="Socket.io"
                                     Skilldesc="1 year work experience"
-                                    /> */}
-                                     {/* <Skill 
+                                    />
+                                     <Skill 
                                     skillpercent={60}
                                     textColor="white"
                                     pathColor="#8CCD8B"
                                     Skillname="Couchbase"
                                     Skilldesc="1 year work experience"
-                                    /> */}
-                                     {/* <Skill 
+                                    />
+                                     <Skill 
                                     skillpercent={60}
                                     textColor="white"
                                     pathColor="#D3C381"
                                     Skillname="Jira"
                                     Skilldesc="1 year work experience"
-                                    /> */}
-                                     {/* <Skill 
+                                    />
+                                     <Skill 
                                     skillpercent={60}
                                     textColor="white"
                                     pathColor="#D38195"
                                     Skillname="Jenkins"
                                     Skilldesc="1 year work experience"
-                                    /> */}
+                                    />
                                     <Skill 
                                     skillpercent={60}
                                     textColor="white"
@@ -221,48 +221,48 @@ const PortFolioContainer = (props) => {
                                     Skillname="AWS S3"
                                     Skilldesc="1 year hands on experience"
                                     />
-                                    {/* <Skill 
+                                    <Skill 
                                     skillpercent={50}
                                     textColor="white"
                                     pathColor="#767271"
                                     Skillname="Next.js"
                                     Skilldesc="6 months hands on experience"
-                                    /> */}
-                                    {/* <Skill 
+                                    />
+                                    <Skill 
                                     skillpercent={50}
                                     textColor="white"
                                     pathColor="#522F28"
                                     Skillname="React Native"
                                     Skilldesc="6 months hands on experience"
-                                    /> */}
-                                     {/* <Skill 
+                                    />
+                                     <Skill 
                                     skillpercent={50}
                                     textColor="white"
                                     pathColor="#8F03FC"
                                     Skillname="PHP"
                                     Skilldesc="6 months hands on experience"
-                                    /> */}
-                                     {/* <Skill 
+                                    />
+                                     <Skill 
                                     skillpercent={50}
                                     textColor="white"
                                     pathColor="#4CFA00"
                                     Skillname="MySQL"
                                     Skilldesc="6 months hands on experience"
-                                    /> */}
-                                    {/* <Skill 
+                                    />
+                                    <Skill 
                                     skillpercent={70}
                                     textColor="white"
                                     pathColor="#FF5733"
                                     Skillname="C++"
                                     Skilldesc="1+ years hands on experience"
-                                    /> */}
-                                    {/* <Skill 
+                                    />
+                                    <Skill 
                                     skillpercent={50}
                                     textColor="white"
                                     pathColor="#B5B8B3"
                                     Skillname="Java"
                                     Skilldesc="6 months hands on experience"
-                                    /> */}
+                                    />
                                     </motion.div>
                                 </div>
                             </div>
