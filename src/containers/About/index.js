@@ -110,7 +110,7 @@ const AboutContainer = () => {
                                 <p>Address: A1-704,Pramukh Sanghat Society,Krishna Company Road,Samarvani,Silvassa,Dadra and Nagar Haveli</p>
                                 <p>PinCode:396230</p>
                                 <p>Email:singhsurajraj1997@gmail.com</p>
-                                <p>Phone:7984818881</p>
+                                <p>{`Phone:+91 7984818881`}</p>
                             </motion.div>
                         </div>
                     </div>

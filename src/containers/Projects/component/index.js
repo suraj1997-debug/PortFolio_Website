@@ -161,6 +161,8 @@ function ProjectSlugContainer(props) {
                                                     </div>
                                                     <h1>{projectCategory?.Category != "Websites" ? project?.projectTitle : "Website"}<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
                                                 </div>
+                                                {
+                                               project?.admindashboard?.length > 1 ?
                                                 <div className="imageslayoutTwo">
                                                     <h1>Dashboard<span style={{ paddingLeft: "1rem" }}>Images List</span></h1>
                                                     <div className="imageTwo">
@@ -179,6 +181,8 @@ function ProjectSlugContainer(props) {
                                                         </Carousel>
                                                     </div>
                                                 </div>
+                                                : null
+}
                                     </motion.div>
                                 </div>
                             </div>
